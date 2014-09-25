@@ -6,6 +6,6 @@ This addon includes a view.xml files, in order to be able to add datas on backen
 The demo.xml file contains datas.
 
 Next step:
->> There is 2 open questions in templates.xml file. Thanks for providing a solution.
->> Third question is : how to write into the demo.xml file the data about the relations Courses-Teachers (One2many and many2one). -> SOLVED in commit N°4
+- There is 2 open questions in templates.xml file. Thanks for providing a solution. = NOT SOLVED.
+- Third question is : how to write into the demo.xml file the data about the relations Courses-Teachers (One2many and many2one). = SOLVED in commit N°4
 
