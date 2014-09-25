@@ -12,8 +12,7 @@
 						<h4>Biography : </h4>
 						<div t-field="teacher.biography"/>
 						<h4>Courses : </h4>
-						<div t-esc="teacher.course_ids"/>
-						<p style="color: red"> QUESTION : HOW TO SHOW THE NAME OF THE COURSE(S) HERE?? </p>							
+						<t t-foreach="list(teacher.course_ids)" t-as="course_id"><div t-esc="course_id[0].name"/></t>	<!-- maybe not the best way to code this... please advise -->					
              		</t>
         		</div>
         		<div class="container">
@@ -23,8 +22,7 @@
 						<h4>Description : </h4>
 						<div t-field="course.description"/>
 						<h4>Teacher : </h4>
-						<div t-esc="course.teacher_id"/>
-						<p style="color: red"> QUESTION : HOW TO SHOW THE NAME OF THE TEACHER HERE ?? </p>		
+						<div t-esc="course.teacher_id[0].name"/>	
              		</t>
         		</div>
             </section>
