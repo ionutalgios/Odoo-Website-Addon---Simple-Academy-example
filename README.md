@@ -7,5 +7,5 @@ The demo.xml file contains datas : the courses and teachers relation are not sta
 
 Next step:
 >> There is 2 open questions in templates.xml file. Thanks for providing a solution.
->> Another question is : how to write into the demo.xml file the data about the relations Courses-Teachers (One2many and many2one).
+>> Third question is : how to write into the demo.xml file the data about the relations Courses-Teachers (One2many and many2one). -> SOLVED in commit N°4
 
