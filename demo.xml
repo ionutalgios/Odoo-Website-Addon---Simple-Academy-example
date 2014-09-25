@@ -1,0 +1,24 @@
+<openerp><data>
+  <record id="padilla" model="academy.teachers">
+    <field name="name">Diana Padilla</field>
+    <field name="department">Mathematics</field>
+    <field name="biography">Here is the biography of Diana.</field>
+  </record>
+  <record id="carroll" model="academy.teachers">
+    <field name="name">Jody Carroll</field>
+    <field name="department">Chemistry and Physics</field>
+    <field name="biography">Here is the biography of Jody.</field>
+  </record>
+  <record id="course_mathematics" model="academy.courses">
+    <field name="name">Course of Mathematics</field>
+    <field name="description">Here is the description of the course of Mathematics.</field>
+  </record>
+  <record id="course_chemistry" model="academy.courses">
+    <field name="name">Course of Chemistry</field>
+    <field name="description">Here is the description of the course of Chemistry.</field>
+  </record>
+  <record id="course_physics" model="academy.courses">
+    <field name="name">Course of Physics</field>
+    <field name="description">Here is the description of the course of Physics.</field>
+  </record>
+</data></openerp>

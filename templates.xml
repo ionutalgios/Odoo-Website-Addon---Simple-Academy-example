@@ -1,0 +1,34 @@
+<openerp><data> 
+  <template id="academy">
+    <t t-call="website.layout">
+        <div id="wrap" class="oe_structure oe_empty">
+            <section>
+                <div class="container">
+        			<h2> List of the teachers</h2>              
+             		<t t-foreach="teachers" t-as="teacher">
+             			<h3><t t-esc="teacher.name"/></h3>
+						<h4>Department : </h4>
+						<div t-field="teacher.department"/>
+						<h4>Biography : </h4>
+						<div t-field="teacher.biography"/>
+						<h4>Courses : </h4>
+						<div t-esc="teacher.course_ids"/>
+						<p style="color: red"> QUESTION : HOW TO SHOW THE NAME OF THE COURSE(S) HERE?? </p>							
+             		</t>
+        		</div>
+        		<div class="container">
+        			<h2> List of the courses</h2>
+             		<t t-foreach="courses" t-as="course">
+             			<h3><t t-esc="course.name"/></h3>
+						<h4>Description : </h4>
+						<div t-field="course.description"/>
+						<h4>Teacher : </h4>
+						<div t-esc="course.teacher_id"/>
+						<p style="color: red"> QUESTION : HOW TO SHOW THE NAME OF THE TEACHER HERE ?? </p>		
+             		</t>
+        		</div>
+            </section>
+        </div>
+    </t>
+  </template>
+</data></openerp>
